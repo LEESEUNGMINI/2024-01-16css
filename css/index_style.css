@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Dongle", sans-serif;
+  scroll-behavior: smooth;
+}
+h3 {
+  font-size: 48px;
+}
+p {
+  font-size: 24px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+#toggle img {
+  margin: 10px;
+}
+
+li {
+  list-style: none;
+  height: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 30px;
+}
+
+/* 헤더 스타일 */
+header {
+  background-color: #34495e;
+}
+header #toggle-menu-btn {
+  display: none;
+  margin: 10px 0 10px 0;
+}
+#toggle_menu {
+  display: none;
+  /* height: 0;
+  transition-duration: 0.5s; */
+}
+section:nth-of-type(2n) {
+  background-color: #f3f3f4;
+}
+header nav input#toggle-menu-btn:checked ~ ul#toggle_menu {
+  display: block;
+  /* height: 200px;
+  transition-duration: 0.5s; */
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 50 0px;
+}
+
+section .sliderzz img {
+  width: 100%;
+}
+.section_title {
+  padding: 50px 30px;
+}
+.section_title h3 {
+  font-size: 3em;
+  text-align: center;
+}
+.section_contents {
+  padding: 50px 0px;
+}
+#article1 img {
+  width: 100px;
+  height: auto;
+  margin: 0 auto;
+}
+#article1 p {
+  color: #ff6600;
+  text-align: center;
+}
+#hidden_img {
+  display: none;
+}
+.program {
+  border: 1px solid black;
+  margin: 40px;
+  padding: 10px;
+}
+/* 코딩이란 */
+footer {
+  width: 100%;
+
+  background-color: #34495e;
+}
+
+#icon {
+  color: white;
+  display: flex;
+  padding: 20px;
+}
+#icon div {
+  margin-left: 20px;
+}
+#icon div:first-child {
+  margin-left: 0;
+}
+#ul_div {
+  display: none;
+}
+#img_article {
+  display: none;
+}
+#icon a {
+  color: white;
+}
+#nav1 {
+  height: 150px;
+}
+#nav1 ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+#nav1 a {
+  text-decoration: none;
+}
+#nav1 li {
+  list-style: none;
+  height: 50px;
+  padding: 15px;
+}
+/* 반응형웹 pc 모드 _ 네비게이션 */
+@media screen and (min-width: 764px) {
+  header nav label#toggle {
+    display: none;
+  }
+  header nav ul#toggle_menu {
+    display: block flex !important;
+    justify-content: space-around;
+    max-width: 1300px;
+    margin: 0 auto;
+    align-items: center;
+    height: 60px;
+  }
+  li {
+    border: none;
+  }
+  #hidden_img {
+    display: block;
+  }
+  .section_contents {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .program {
+    width: 23%;
+    height: 300px;
+    overflow: hidden;
+  }
+}

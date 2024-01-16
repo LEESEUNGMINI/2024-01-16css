@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index_style.css" />
+    <script
+    src="https://kit.fontawesome.com/eca7d1bab1.js"
+    crossorigin="anonymous"
+  ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
+    </style>
+    <script>
+      $(document).ready(function () {
+        $(".sliderzz").bxSlider({
+          auto: true,
+          autoControls: true,
+          stopAutoOnClick: true,
+          pager: true,
+          slideWidth: 10000,
+          speed: 500,
+          pause: 4000,
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- 헤더 토글 메뉴 -->
+    <header>
+      <nav>
+        <input type="checkbox" id="toggle-menu-btn" />
+        <label id="toggle" for="toggle-menu-btn" style="margin: 20px">
+          <img src="./images/but_toggle.png" alt="toggleMenu" />
+        </label>
+        <ul id="toggle_menu">
+          <li><a href="#">처음으로</a></li>
+          <li><a href="#coding_why">코딩이란</a></li>
+          <li><a href="#coding_pro">왜 코딩 교육인가</a></li>
+          <li><a href="#about" >교육 프로그램</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- 메인 캐러셀 이미지 -->
+    <section id="image">
+      <div class="wrapper" style="width: 100%">
+        <div class="sliderzz">
+          <div><img src="./images/top-1.jpg" alt="images1" /></div>
+          <div><img src="./images/top-2.jpg" alt="images2" /></div>
+          <div><img src="./images/top-3.jpg" alt="images3" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 왜 코딩 교육인가 -->
+    <section id="coding_why">
+      <div class="wrapper">
+        <article class="section_title">
+          <h3>코딩이란</h3>
+        </article>
+        <article
+          id="article1"
+          class="section_contents"
+          style="display: flex; flex-direction: column"
+        >
+          <img src="./images/quot-1.png" alt="" />
+          <p>
+            코딩은 사고의 범위를 넓혀주고, 더 나은 생각을 할 수 있게 만들며,
+          </p>
+          <p>분야에 상관없이 모든 문제에 대해 새로운 해결책을 생각할 수 있는</p>
+          <p>힘을 길러주는 것</p>
+          <p style="color: #aaa">- 빌 게이츠 -</p>
+          <img src="./images/quot-2.png" alt="" />
+        </article>
+      </div>
+    </section>
+    <!-- 코딩 프로그램 -->
+    <section id="coding_pro">
+      <div class="wrapper">
+        <article class="section_title">
+          <h3>왜 코딩 교육인가</h3>
+        </article>
+        <article class="section_contents">
+          <p style="margin-left: 30px">
+            코딩교육은 앞으로 미래 사회를 살아가는데 있어서 IT 분야에엇 일하는
+            사람 들 뿐만 아니라 일반인에게도 꼭 필요한 공부입니다. 프로그램을
+            다룰 수 있 는 코딩 언어을 알고 있다면 평소 자신이 생각했던
+            프로그램을 스스로 개발 해서 실생활에 활용할 수 있습니다.
+          </p>
+          <div>
+            <img
+              style="width: 300px; margin-left: 50px"
+              id="hidden_img"
+              src="./images/coding.png"
+              alt=""
+            />
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- 코딩이란 -->
+    <section id="about">
+      <div class="wrapper">
+        <article class="section_title"><h3>왜 코딩 교육인가</h3></article>
+        <article class="section_contents">
+          <div class="program">
+            <h4>언플러그드 활동</h4>
+            <p>
+              컴퓨터 과학의 개념이나 원리를 스티리텔링으로 풀어가거나 학습지를
+              풀어가며 이해 할 수도 있고 신체를 움직여 직접 활동하기도 합니다.
+            </p>
+          </div>
+          <div class="program">
+            <h4>스크래치</h4>
+            <p>
+              스크래치는 초보자들이 재미있게 프로그래밍을 익힐 수 있도록 고안된
+              프로그래밍 언어입니다. 게임이나 애니메이션과 같은 것을 쉽게 만들
+              수 있도록 고안되어 있기 때문에 어렵지 않게 프로그래밍 기법들을
+              익힐 수 있습니다.
+            </p>
+          </div>
+          <div class="program">
+            <h4>엔트리</h4>
+            <p>
+              엔트리는 국내에서 만들어진 교육용 프로그래밍 언어입니다. 어려운
+              텍스트 형식의 프로그래밍 언어 대신, 블록을 조립하듯 누구나 쉽게
+              프로그래밍을 시작할 수 있습 니다. 모든 교육 자료를 홈페이지에서
+              무료로 배포합니다.
+            </p>
+          </div>
+          <div class="program">
+            <h4>피지컬 컴퓨팅</h4>
+            <p>
+              센서를 이용해 사용자 동작에 반응하게 하거나 로봇을 움직여가며
+              코딩을 배울 수 도 있습니다.아두이노를 비록해 아두이노를 기반으로
+              하는 다양한 마이크로 컨트롤러를 사용합니다.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- 푸터 -->
+    <footer>
+      <!-- 글자 -->
+      <div style="color: white; padding: 20px">
+        <p style="margin-top: 40px">
+          서울특별시 XX구 XXX로 XX길 XXXXXXXX / 대표 : 이승민 <br />
+          사업자 등록번호 ㅁㅁㅁ-ㅁㅁ-ㅁㅁㅁㅁㅁ<br />
+          전화 : XXXX - XXXX / 팩스 : XX - XXXX - XXXX <br />
+          이메일 : aaa@aaa.aaa
+        </p>
+      </div>
+      <!-- 아이콘 -->
+      <div id="icon" style="margin-right: 200px;">
+      <div>
+       <a href="https://www.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+      </div>
+      <div>
+        <a href="https://twitter.com/" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/" target="_blank"> <i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div>
+        <a href="https://www.google.co.kr/" target="_blank">  <i class="fa-brands fa-google-plus-g"></i></a>
+      </div>
+    </footer>
+    <script>
+      $(function () {
+        // 토글 메뉴 플러그인 실행
+        let toggle = $("#toggle");
+        let menu = $("nav ul");
+        $(toggle).on("click", function (e) {
+          e.preventDefault();
+          menu.slideToggle();
+        });
+      });
+    </script>
+  </body>
+</html>
